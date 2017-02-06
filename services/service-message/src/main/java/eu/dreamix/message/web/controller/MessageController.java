@@ -2,6 +2,7 @@ package eu.dreamix.message.web.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import eu.dreamix.message.web.model.Message;
 import eu.dreamix.message.web.service.MessageService;
 
+@RefreshScope
 @RestController
 @RequestMapping(value = "/message")
 public class MessageController {
