@@ -5,7 +5,6 @@ spring:
     config:
       server:
         git:
-          #uri: file:C:/dev/git/micro-services
           uri: https://github.com/isilona/micro-services/
           search-paths:
           - configuration-properties
